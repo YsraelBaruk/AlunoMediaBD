@@ -8,22 +8,20 @@ namespace WindowsFormsApp1
 {
     static class Program
     {
-        /// <summary>
-        /// Ponto de entrada principal para o aplicativo.
-        /// </summary>
+        public static Conexao cx;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Conexao cx = new Conexao("localhost", "Teste_DS_BD","root");
+            cx = new Conexao("localhost", "testedsbd", "root");
             if (cx.testarConexao())
             {
                 Application.Run(new Form1());
             }
             else 
             {
-                MessageBox.Show(cx.getMsgErro());
+                MessageBox.Show($"Erro: {cx.getMsgErro()}");
             }
         }
     }

@@ -63,9 +63,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(9, 10);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(245, 410);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -74,17 +74,18 @@
             // btnCadastrar
             // 
             this.btnCadastrar.Location = new System.Drawing.Point(19, 353);
-            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCadastrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(214, 35);
             this.btnCadastrar.TabIndex = 10;
             this.btnCadastrar.Text = "Cadasrtar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.BtnCadastrar_Click);
             // 
             // txtComentario
             // 
             this.txtComentario.Location = new System.Drawing.Point(19, 249);
-            this.txtComentario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtComentario.Margin = new System.Windows.Forms.Padding(2);
             this.txtComentario.Name = "txtComentario";
             this.txtComentario.Size = new System.Drawing.Size(216, 79);
             this.txtComentario.TabIndex = 9;
@@ -104,7 +105,7 @@
             // 
             this.chckLike.AutoSize = true;
             this.chckLike.Location = new System.Drawing.Point(109, 175);
-            this.chckLike.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chckLike.Margin = new System.Windows.Forms.Padding(2);
             this.chckLike.Name = "chckLike";
             this.chckLike.Size = new System.Drawing.Size(57, 24);
             this.chckLike.TabIndex = 7;
@@ -121,7 +122,7 @@
             "4",
             "5"});
             this.cbAvaliacao.Location = new System.Drawing.Point(19, 173);
-            this.cbAvaliacao.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbAvaliacao.Margin = new System.Windows.Forms.Padding(2);
             this.cbAvaliacao.Name = "cbAvaliacao";
             this.cbAvaliacao.Size = new System.Drawing.Size(66, 28);
             this.cbAvaliacao.TabIndex = 5;
@@ -139,7 +140,7 @@
             // txtAno
             // 
             this.txtAno.Location = new System.Drawing.Point(19, 118);
-            this.txtAno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAno.Margin = new System.Windows.Forms.Padding(2);
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(170, 26);
             this.txtAno.TabIndex = 3;
@@ -157,7 +158,7 @@
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(19, 56);
-            this.txtNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(2);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(170, 26);
             this.txtNome.TabIndex = 1;
@@ -184,7 +185,7 @@
             this.Column4,
             this.Column5});
             this.dtDados.Location = new System.Drawing.Point(259, 27);
-            this.dtDados.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtDados.Margin = new System.Windows.Forms.Padding(2);
             this.dtDados.Name = "dtDados";
             this.dtDados.ReadOnly = true;
             this.dtDados.RowHeadersWidth = 51;
@@ -239,7 +240,7 @@
             this.ClientSize = new System.Drawing.Size(776, 454);
             this.Controls.Add(this.dtDados);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
