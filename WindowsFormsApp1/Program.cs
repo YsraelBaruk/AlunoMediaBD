@@ -14,7 +14,7 @@ namespace WindowsFormsApp1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            cx = new Conexao("localhost", "testedsbd", "root");
+            cx = new Conexao("localhost", "aluno_ds_bd", "root");
             if (cx.testarConexao())
             {
                 Application.Run(new Form1());
